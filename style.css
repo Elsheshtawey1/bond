@@ -1,0 +1,260 @@
+:root {
+    --dark-color: #19283f;
+    --grean-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+}
+.main-btn{
+background-color: var(--red-color);
+color:var(--yellow-color) ;
+padding: 0.5rem 1rem ;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--grean-color);
+    
+}
+.navbar .search{
+    border-left: 1px solid var(--grean-color);
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.navbar .search i{
+    color: var(--grean-color);
+
+}
+.navbar .search :hover{
+    color: white;
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar-toggler:focus {
+
+    outline: 0;
+    box-shadow: none;
+}
+/* start landing */
+.landeing {
+ background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+
+}
+.main-btn:hover{
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+    outline: 0;
+}
+
+.main-title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--grean-color);
+    bottom: -20px;
+    left: 50%;
+    position: absolute;
+    transform: translatex(-50%);
+}
+/* start featcher */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder i{
+left: 50%;
+transform: translate(-50%);
+
+
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color:var(--section-color) ;
+}
+
+
+.features .icon-holder .icon{
+    color: var(--grean-color);
+    
+}
+.features .feat h4{
+    color: var(--grean-color);
+}
+.our-work{
+    background-color: var(--section-color);
+}
+/* our work */
+.nav-link {
+    margin-right: 0px !important;
+    border-radius: 50px;
+}
+
+
+.our-work .nav-link.active{
+    background-color: var(--red-color);
+}
+.nav-link:hover{
+    background-color: var(--yellow-color);
+    border-radius: 20px;
+
+}
+.nav-link{
+    margin-right: 1rem;
+    border-radius: 50px;
+}
+.our-work .nav-link.active:hover{
+    background-color: var(--yellow-color);
+}
+
+.our-work .box{
+ padding: 5px;
+ overflow: hidden;
+ position: relative;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.our-work .box::before{
+    content: 'application';
+    position: absolute;
+    background-color: #33d1ccbb;
+    width: calc(100% - 0px);
+    height:calc(100% - 10px);
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+color: white;
+transition: all 0.3s;
+font-size: 1.5rem;
+transform: translateX(calc(100% - 5px));
+}
+
+.our-work .box:hover::before{
+transform: translateX(0);
+}
+.stufe .descript{
+    max-width: 500px;
+}
+.our-team .tit-h2{
+    color: var(--yellow-color);
+    margin-top: 5px;
+}
+.our-team .box h4{
+    background-color: var(--grean-color);
+    cursor: pointer;
+}
+.our-team .box h4:hover{
+    background-color: #33d1ccbb;
+}
+
+.project{
+    background-color: var(--dark-color);
+}
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* End Subscribe */
+/* Start Footer */
+.footer {
+    background-color: var(--dark-color);
+    transition: all 0.5s;
+}
+
+.footer .copyright>span {
+    color: var(--green-color);
+}
+
+.footer .copyright div span {
+    color: var(--yellow-color);
+}
+
+.footer .contact i{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook:hover {
+    color: #1877f2;
+}
+
+.footer .twitter:hover {
+    color: #1da1f2;
+}
+
+.footer .linkedin:hover {
+    color: #0077b5;
+}
+
+.footer .youtube:hover {
+    color: #ff0000;
+}
+
+/* End Footer */
+/* to top */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
